@@ -17,19 +17,42 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        List {
-            ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+        TabView {
+            NavigationView {
+                TwitterView.init()
+                Text("News")
+                    .navigationBarTitle("News")
             }
-            .onDelete(perform: deleteItems)
-        }
-        .toolbar {
-            #if os(iOS)
-            EditButton()
-            #endif
-
-            Button(action: addItem) {
-                Label("Add Item", systemImage: "plus")
+            .tabItem {
+                Image(systemName: "flame.fill")
+                Text("News")
+            }
+            NavigationView {
+                QandA.init()
+                Text("Q&A")
+                    .navigationBarTitle("Q&A")
+            }
+            .tabItem {
+                Image(systemName: "questionmark.circle")
+                Text("Q&A")
+            }
+            NavigationView {
+                TeamView.init()
+                Text("Teams")
+                    .navigationBarTitle("Teams")
+            }
+            .tabItem {
+                Image(systemName: "rosette")
+                Text("Teams")
+            }
+            NavigationView {
+                Account.init()
+                Text("Account")
+                    .navigationBarTitle("Account")
+            }
+            .tabItem {
+                Image(systemName: "person.circle")
+                Text("Account")
             }
         }
     }

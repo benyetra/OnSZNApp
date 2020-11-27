@@ -18,3 +18,13 @@ struct OnSZNApp: App {
         }
     }
 }
+
+struct OnSZNApp_Previews: PreviewProvider {
+    static var previews: some View {
+        Text("Do You Hear That Buzz 🐝")
+            .font(.title2)
+            .fontWeight(.semibold)
+            .foregroundColor(Color.yellow)
+            .multilineTextAlignment(.center)
+    }
+}
