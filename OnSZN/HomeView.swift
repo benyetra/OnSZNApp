@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct HomeView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -19,9 +19,12 @@ struct ContentView: View {
     var body: some View {
         TabView {
             NavigationView {
-                TwitterView.init()
-                Text("News")
-                    .navigationBarTitle("News")
+                VStack {
+                    Image("nbaicon").resizable().frame(width: 150, height: 75)
+                    TwitterView.init()
+                    Text("News")
+                        .navigationBarTitle("News")
+                    }
             }
             .tabItem {
                 Image(systemName: "flame.fill")
@@ -37,7 +40,7 @@ struct ContentView: View {
                 Text("Q&A")
             }
             NavigationView {
-                TeamView.init()
+                ContentView.init()
                 Text("Teams")
                     .navigationBarTitle("Teams")
             }
@@ -98,6 +101,6 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        HomeView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

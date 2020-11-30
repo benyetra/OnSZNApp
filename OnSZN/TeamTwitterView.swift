@@ -1,21 +1,21 @@
 //
-//  TwitterView.swift
+//  TeamTwitterView.swift
 //  OnSZN
 //
-//  Created by Bennett Yetra on 11/26/20.
+//  Created by Bennett Yetra on 11/29/20.
 //
 
 import SwiftUI
 
 
 /// A twitter view which shows the nba twitter feed.
-struct TwitterView: View {
+struct TeamTwitterView: View {
     @State private var isLoading = true
     
     var body: some View {
         NavigationView {
             ZStack {
-                TwitterWebView { loadingState in
+                TeamTwitterWebView { loadingState in
                     switch loadingState {
                     case .idle:
                         isLoading = false
