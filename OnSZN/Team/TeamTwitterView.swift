@@ -11,11 +11,11 @@ import SwiftUI
 /// A twitter view which shows the nba twitter feed.
 struct TeamTwitterView: View {
     @State private var isLoading = true
-    
+    let team: Team
     var body: some View {
         NavigationView {
             ZStack {
-                TeamTwitterWebView { loadingState in
+                TeamTwitterWebView() { loadingState in
                     switch loadingState {
                     case .idle:
                         isLoading = false

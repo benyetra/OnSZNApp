@@ -73,7 +73,7 @@ struct TeamView: View {
             Text("\(team.name) News").font(.title).fontWeight(.bold)
         }
         VStack {
-            TeamTwitterView.init()
+            TeamTwitterView.init(team: team)
         }
     }
 }

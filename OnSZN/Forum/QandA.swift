@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QandA: View {
     var body: some View {
-        Text("Questions?")
+        Text("Questions? -- Completely Anonymous Basketball Talk")
     }
 }
 

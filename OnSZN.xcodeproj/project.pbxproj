@@ -117,22 +117,17 @@
 		35D19D96256C8EB500D8E41D /* OnSZN */ = {
 			isa = PBXGroup;
 			children = (
-				35C07B73257422090069E38C /* Teams */,
-				3507E82025701C27006FC143 /* TwitterViewTemplate.html */,
+				35DD972525749DDB0057B399 /* Forum */,
 				35D19D97256C8EB500D8E41D /* OnSZNApp.swift */,
 				35D19D99256C8EB500D8E41D /* HomeView.swift */,
-				3507E81625701AF1006FC143 /* TwitterWebView.swift */,
-				3507E81B25701B8D006FC143 /* TwitterView.swift */,
-				35D19DCF256C93EC00D8E41D /* QandA.swift */,
-				35D19DD9256C93FC00D8E41D /* Account.swift */,
-				3507E83125714CB0006FC143 /* TeamView.swift */,
-				35DD971A25742B5E0057B399 /* TeamTwitterView.swift */,
+				35DD972425749DAD0057B399 /* News */,
+				35DD972325749D6B0057B399 /* Team */,
+				35DD972225749D4E0057B399 /* Profile */,
 				35D19D9B256C8EB700D8E41D /* Assets.xcassets */,
 				35D19DA0256C8EB700D8E41D /* Persistence.swift */,
 				35D19DA5256C8EB700D8E41D /* Info.plist */,
 				35D19DA2256C8EB700D8E41D /* OnSZN.xcdatamodeld */,
 				35D19D9D256C8EB700D8E41D /* Preview Content */,
-				35DD971525742AEB0057B399 /* TeamTwitterWebView.swift */,
 			);
 			path = OnSZN;
 			sourceTree = "<group>";
@@ -161,6 +156,43 @@
 				35D19DBB256C8EB700D8E41D /* Info.plist */,
 			);
 			path = OnSZNUITests;
+			sourceTree = "<group>";
+		};
+		35DD972225749D4E0057B399 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				35D19DD9256C93FC00D8E41D /* Account.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		35DD972325749D6B0057B399 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				35C07B73257422090069E38C /* Teams */,
+				3507E83125714CB0006FC143 /* TeamView.swift */,
+				35DD971525742AEB0057B399 /* TeamTwitterWebView.swift */,
+				35DD971A25742B5E0057B399 /* TeamTwitterView.swift */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		35DD972425749DAD0057B399 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				3507E82025701C27006FC143 /* TwitterViewTemplate.html */,
+				3507E81625701AF1006FC143 /* TwitterWebView.swift */,
+				3507E81B25701B8D006FC143 /* TwitterView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		35DD972525749DDB0057B399 /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+				35D19DCF256C93EC00D8E41D /* QandA.swift */,
+			);
+			path = Forum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
