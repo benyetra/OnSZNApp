@@ -11,6 +11,8 @@
 		3507E81C25701B8D006FC143 /* TwitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3507E81B25701B8D006FC143 /* TwitterView.swift */; };
 		3507E82125701C27006FC143 /* TwitterViewTemplate.html in Resources */ = {isa = PBXBuildFile; fileRef = 3507E82025701C27006FC143 /* TwitterViewTemplate.html */; };
 		3507E83225714CB0006FC143 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3507E83125714CB0006FC143 /* TeamView.swift */; };
+		356F97DE258FB6CE0094E9E7 /* UserInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F97DC258FB6CE0094E9E7 /* UserInfo+CoreDataClass.swift */; };
+		356F97DF258FB6CE0094E9E7 /* UserInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F97DD258FB6CE0094E9E7 /* UserInfo+CoreDataProperties.swift */; };
 		35C07B74257422090069E38C /* Teams in Resources */ = {isa = PBXBuildFile; fileRef = 35C07B73257422090069E38C /* Teams */; };
 		35D19D98256C8EB500D8E41D /* OnSZNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D19D97256C8EB500D8E41D /* OnSZNApp.swift */; };
 		35D19D9A256C8EB500D8E41D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D19D99256C8EB500D8E41D /* HomeView.swift */; };
@@ -48,6 +50,8 @@
 		3507E81B25701B8D006FC143 /* TwitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterView.swift; sourceTree = "<group>"; };
 		3507E82025701C27006FC143 /* TwitterViewTemplate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TwitterViewTemplate.html; sourceTree = "<group>"; };
 		3507E83125714CB0006FC143 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		356F97DC258FB6CE0094E9E7 /* UserInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		356F97DD258FB6CE0094E9E7 /* UserInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		35C07B73257422090069E38C /* Teams */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Teams; sourceTree = "<group>"; };
 		35D19D94256C8EB500D8E41D /* OnSZN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnSZN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D19D97256C8EB500D8E41D /* OnSZNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnSZNApp.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 		35D19D96256C8EB500D8E41D /* OnSZN */ = {
 			isa = PBXGroup;
 			children = (
+				356F97DC258FB6CE0094E9E7 /* UserInfo+CoreDataClass.swift */,
+				356F97DD258FB6CE0094E9E7 /* UserInfo+CoreDataProperties.swift */,
 				35DD972525749DDB0057B399 /* Forum */,
 				35D19D97256C8EB500D8E41D /* OnSZNApp.swift */,
 				35D19D99256C8EB500D8E41D /* HomeView.swift */,
@@ -328,10 +334,12 @@
 			files = (
 				3507E81725701AF1006FC143 /* TwitterWebView.swift in Sources */,
 				35D19DA1256C8EB700D8E41D /* Persistence.swift in Sources */,
+				356F97DE258FB6CE0094E9E7 /* UserInfo+CoreDataClass.swift in Sources */,
 				3507E81C25701B8D006FC143 /* TwitterView.swift in Sources */,
 				35D19DD0256C93EC00D8E41D /* QandA.swift in Sources */,
 				35D19D9A256C8EB500D8E41D /* HomeView.swift in Sources */,
 				35D19DA4256C8EB700D8E41D /* OnSZN.xcdatamodeld in Sources */,
+				356F97DF258FB6CE0094E9E7 /* UserInfo+CoreDataProperties.swift in Sources */,
 				3507E83225714CB0006FC143 /* TeamView.swift in Sources */,
 				35D19DDA256C93FC00D8E41D /* Account.swift in Sources */,
 				35DD971625742AEB0057B399 /* TeamTwitterWebView.swift in Sources */,
