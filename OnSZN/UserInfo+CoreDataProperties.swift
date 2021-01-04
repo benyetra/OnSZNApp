@@ -16,7 +16,7 @@ extension UserInfo {
         return NSFetchRequest<UserInfo>(entityName: "UserInfo")
     }
 
-    @NSManaged public var favoriteTeam: String?
+    @NSManaged public var favoriteTeam: String
 
 }
 

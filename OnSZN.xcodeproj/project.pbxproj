@@ -11,6 +11,7 @@
 		3507E81C25701B8D006FC143 /* TwitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3507E81B25701B8D006FC143 /* TwitterView.swift */; };
 		3507E82125701C27006FC143 /* TwitterViewTemplate.html in Resources */ = {isa = PBXBuildFile; fileRef = 3507E82025701C27006FC143 /* TwitterViewTemplate.html */; };
 		3507E83225714CB0006FC143 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3507E83125714CB0006FC143 /* TeamView.swift */; };
+		3536E1B925A10A7600273328 /* TeamSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536E1B825A10A7600273328 /* TeamSelectionView.swift */; };
 		356F97DE258FB6CE0094E9E7 /* UserInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F97DC258FB6CE0094E9E7 /* UserInfo+CoreDataClass.swift */; };
 		356F97DF258FB6CE0094E9E7 /* UserInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F97DD258FB6CE0094E9E7 /* UserInfo+CoreDataProperties.swift */; };
 		35C07B74257422090069E38C /* Teams in Resources */ = {isa = PBXBuildFile; fileRef = 35C07B73257422090069E38C /* Teams */; };
@@ -50,6 +51,7 @@
 		3507E81B25701B8D006FC143 /* TwitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterView.swift; sourceTree = "<group>"; };
 		3507E82025701C27006FC143 /* TwitterViewTemplate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TwitterViewTemplate.html; sourceTree = "<group>"; };
 		3507E83125714CB0006FC143 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		3536E1B825A10A7600273328 /* TeamSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSelectionView.swift; sourceTree = "<group>"; };
 		356F97DC258FB6CE0094E9E7 /* UserInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		356F97DD258FB6CE0094E9E7 /* UserInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		35C07B73257422090069E38C /* Teams */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Teams; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				35D19DD9256C93FC00D8E41D /* Account.swift */,
+				3536E1B825A10A7600273328 /* TeamSelectionView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3536E1B925A10A7600273328 /* TeamSelectionView.swift in Sources */,
 				3507E81725701AF1006FC143 /* TwitterWebView.swift in Sources */,
 				35D19DA1256C8EB700D8E41D /* Persistence.swift in Sources */,
 				356F97DE258FB6CE0094E9E7 /* UserInfo+CoreDataClass.swift in Sources */,
