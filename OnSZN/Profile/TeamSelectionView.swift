@@ -47,9 +47,16 @@ struct TeamSelectionView: View {
 
         let teamNames = teams
         
-        func saveTeam() {
+        func saveTeam(teamNames: String) {
+            let favTeams = UserInfo(context: self.moc)
+            favTeams.favoriteTeam = teamNames
             try? self.moc.save()
             self.showingAlert = true
+        }
+        
+        func getFavTeam() -> String {
+            var teamName: String = "Boston Celtics"
+            return teamName
         }
         
         
@@ -57,13 +64,13 @@ struct TeamSelectionView: View {
         List {
             ForEach(0..<teamNames.count) { index in
                 VStack(spacing: 10) {
-                ForEach(teamNames) { teams in
-                    Button(action: { saveTeam() } ) {
-                        Image(teams.icon).resizable().frame(width: 50.0, height: 50.0)
+                ForEach(teamNames, id: \.id) { teams in
+                    Button(action: { saveTeam(teamNames: teams.name) } ) {
+                        Image(teams.icon).resizable().frame(width: 40, height: 40.0)
                         Text(teams.name).bold().font(.title).padding()
-                    }.overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 3)).buttonStyle(PlainButtonStyle())
+                    }.overlay(RoundedRectangle(cornerRadius: 7).stroke(Color.black, lineWidth: 2)).buttonStyle(PlainButtonStyle())
                 }.alert(isPresented: $showingAlert) {
-                    Alert(title: Text("Favorite Team"), message: Text("You have added: "), dismissButton: .default(Text("Okay")))
+                    Alert(title: Text("Favorite Team"), message: Text("You have added: \(getFavTeam())"), dismissButton: .default(Text("Okay")))
                     }
                 }
             }
